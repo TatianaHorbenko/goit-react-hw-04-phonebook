@@ -1,0 +1,40 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.text {
+  margin: 0;
+  border-radius: 10px;
+
+  transition: all 250ms linear;
+}
+
+.button {
+  background-color: #eca1ab;
+  cursor: pointer;
+}
+
+.button:before {
+  content: 'Delete';
+  background-color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: all 250ms linear;
+}
+
+.button:hover:before {
+  color: red;
+}
+
+/* .contact:hover .text {
+  color: #ffffff;
+  background-color: #eca1ab;
+  padding: 0 10px;
+  margin-left: 10px;
+} */
